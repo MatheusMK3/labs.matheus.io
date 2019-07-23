@@ -62,3 +62,22 @@
 
   color: inherit;
 }
+
+/* Responsive fixes */
+@media (max-width: 640px) {
+ .labs-menu-container {
+   height: auto;
+   min-height: 75px;
+
+   display: grid;
+
+   align-items: center;
+
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "labs-menu-logo labs-menu-title";
+ }
+ .labs-menu-social {
+   display: none;
+ }
+}
