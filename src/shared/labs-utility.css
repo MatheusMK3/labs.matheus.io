@@ -1,0 +1,64 @@
+.labs-menu {
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
+
+  color: #0C0321;
+  background-color: #fff;
+
+  margin-bottom: 2em;
+
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+.labs-menu-container {
+  height: 75px;
+
+  display: grid;
+
+  align-items: center;
+
+  grid-template-columns: 3fr 6fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "labs-menu-logo labs-menu-title labs-menu-social";
+}
+.labs-menu-container.labs-menu-custom {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.labs-menu .labs-menu-logo {
+  grid-area: labs-menu-logo;
+
+  display: block;
+
+  background-image: url('labs-logo.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+
+  height: 2.5em;
+}
+
+.labs-menu .labs-menu-title {
+  grid-area: labs-menu-title;
+
+  font-size: 1.1em;
+  text-align: center;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.labs-menu .labs-menu-social {
+  grid-area: labs-menu-social;
+
+  text-align: right;
+}
+.labs-menu .labs-menu-social a {
+  display: inline-block;
+
+  padding: 0.5em;
+
+  color: inherit;
+}
